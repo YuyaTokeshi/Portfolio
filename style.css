@@ -20,7 +20,7 @@ body {
     color: bisque;
     height: 1200px;
     margin: 0 auto;
-    width: 1200px;
+    width: min(1200px, 100%);
 }
 
 .main-area-transparent {
@@ -73,8 +73,9 @@ body {
 .body-area-text {
     background-color: burlywood;
     color: aliceblue;
-    display: none;
     font-size: small;
+    height: fit-content;
+    overflow: hidden;
 }
 
 .body-area-text>table {
@@ -89,7 +90,17 @@ td {
     padding: 1px;
 }
 
-.dice-display img{
+.dice-display img {
     height: 50px;
     width: 50px;
+}
+
+.accordion-enter-active,
+.accordion-leave-active {
+    transition: height 10s ease-in-out;
+}
+
+.accordion-enter,
+.accordion-leave-to {
+    height: 0;
 }
