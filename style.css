@@ -1,5 +1,11 @@
 @charset "utf-8";
 
+@media screen and (max-width: 480px) {
+    body {
+        width: 100%;
+    }
+}
+
 body {
     background-color: rgb(55, 55, 55);
     font-family: "Hiragino Kaku Gothic ProN", sans-serif;
@@ -9,10 +15,11 @@ body {
 }
 
 .main-area {
-    background-image: url("background.jpg");
+    background-image: url("img/background.jpg");
     background-size: cover;
     color: bisque;
     height: 1200px;
+    margin: 0 auto;
     width: 1200px;
 }
 
@@ -46,7 +53,7 @@ body {
 }
 
 .main-area-introduce>.picture {
-    background-image: url("myself.jpg");
+    background-image: url("img/myself.jpg");
     background-size: cover;
     margin-left: 350px;
     width: 250px;
@@ -80,4 +87,9 @@ th,
 td {
     border: 1px solid #333;
     padding: 1px;
+}
+
+.dice-display img{
+    height: 50px;
+    width: 50px;
 }
